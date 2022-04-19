@@ -1,5 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Image, ListGroup } from "react-bootstrap";
+import CareerServices from "./CareerServices";
+import VisaServices from "./VisaServices";
+import DepartureServices from "./DepartureServices";
 
 function Services() {
   return (
@@ -37,15 +40,7 @@ function Services() {
                 to University Admissions
               </span>
             </p>
-            <ListGroup variant="flush" className="services_listgroup">
-              <ListGroup.Item>Service 1</ListGroup.Item>
-              <ListGroup.Item>Service 2</ListGroup.Item>
-              <ListGroup.Item>Service 3</ListGroup.Item>
-              <ListGroup.Item>Service 4</ListGroup.Item>
-              <ListGroup.Item>Service 5</ListGroup.Item>
-              <ListGroup.Item>Service 6</ListGroup.Item>
-              <ListGroup.Item>Service 7</ListGroup.Item>
-            </ListGroup>
+            <CareerServices />
           </Col>
         </Row>
         <br />
@@ -63,16 +58,7 @@ function Services() {
               <br />
               <span className="services_services_points">to Accommodation</span>
             </p>
-            <ListGroup variant="flush" className="services_listgroup2">
-              <ListGroup.Item>Service 1</ListGroup.Item>
-              <ListGroup.Item>Service 2</ListGroup.Item>
-              <ListGroup.Item>Service 3</ListGroup.Item>
-              <ListGroup.Item>Service 4</ListGroup.Item>
-              <ListGroup.Item>Service 5</ListGroup.Item>
-              <ListGroup.Item>Service 6</ListGroup.Item>
-              <ListGroup.Item>Service 7</ListGroup.Item>
-              <ListGroup.Item>Service 8</ListGroup.Item>
-            </ListGroup>
+            <VisaServices />
           </Col>
           <Col md={6} className="services_cols">
             <Image
@@ -106,14 +92,7 @@ function Services() {
                 to On Sight Support
               </span>
             </p>
-            <ListGroup variant="flush" className="services_listgroup">
-              <ListGroup.Item>Service 1</ListGroup.Item>
-              <ListGroup.Item>Service 2</ListGroup.Item>
-              <ListGroup.Item>Service 3</ListGroup.Item>
-              <ListGroup.Item>Service 4</ListGroup.Item>
-              <ListGroup.Item>Service 5</ListGroup.Item>
-              <ListGroup.Item>Service 6</ListGroup.Item>
-            </ListGroup>
+            <DepartureServices />
           </Col>
         </Row>
       </Container>

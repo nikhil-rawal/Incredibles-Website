@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 
 function TopBar() {
   return (
-    <Navbar expand="lg" fixed="top" className="topbar_everything">
+    <Navbar expand="lg" className="topbar_everything">
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>

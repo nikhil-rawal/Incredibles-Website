@@ -12,12 +12,19 @@ function ExternalFrame() {
       <TorontoVideo />
       <TopBar />
       <Home />
-      <Routes>
-        <Route exact path="/services" element={<Services />} />
-      </Routes>
+      <Services />
       <About />
     </BrowserRouter>
   );
 }
 
 export default ExternalFrame;
+
+/*
+
+<Routes>
+        <Route exact path="/services" element={<Services />} />
+        <Route exact path="/about" element={<About />} />
+      </Routes>
+
+      */
