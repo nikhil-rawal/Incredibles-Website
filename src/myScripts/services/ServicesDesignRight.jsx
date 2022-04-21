@@ -17,7 +17,7 @@ function ServicesDesignRight(props) {
           src={props.image2Src}
           alt={props.image2Alt}
         />
-        <p className="serices_p">
+        <p>
           <span className="services_services_points">
             <strong>{props.heading}</strong>
           </span>

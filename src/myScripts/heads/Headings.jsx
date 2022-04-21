@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 function Headings(props) {
   return (

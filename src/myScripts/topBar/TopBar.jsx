@@ -1,6 +1,7 @@
 import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import Images from "../heads/Images";
 
 function TopBar() {
   return (
@@ -8,10 +9,11 @@ function TopBar() {
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>
-            <img
-              className="topbar_incredibleslogo"
-              src={"assets/svg/incredibles_logo.svg"}
-              alt="Incredibles Logo"
+            <Images
+              key="brandlogo"
+              imageClass="topbar_incredibleslogo"
+              imageSrc="assets/svg/incredibles_logo.svg"
+              imageAlt="Incredibles Logo"
             />
           </Navbar.Brand>
         </LinkContainer>
@@ -54,23 +56,6 @@ function TopBar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-    // <div className="topBar">
-    //   <div className="topBar_logo">
-    //     <img
-    //       className="topBar_logo_incrediblesLogo"
-    //       src={"assets/svg/incredibles_logo.svg"}
-    //       alt="Incredibles Logo"
-    //     />
-    //   </div>
-    //   <div className="topBar_links">
-    //     <div className="topBar_links_services">Services</div>
-    //     <div className="topBar_links_about">About</div>
-    //     <div className="topBar_links_recommendations">Recommendations</div>
-    //     <div className="topBar_links_faqs">FAQs</div>
-    //     <div className="topBar_links_contact">Contact</div>
-    //   </div>
-    // </div>
   );
 }
 

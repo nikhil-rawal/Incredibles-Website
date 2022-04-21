@@ -30,18 +30,7 @@ function Services() {
           whichService={<CareerServices />}
         />
         <br />
-        <ServicesDesignLeft
-          key="services2"
-          image1Class="services_svg services_service2_svg"
-          image1Src="assets/svg/service2.svg"
-          image1Alt="From Visa Consultancy to Accommodation"
-          image2Class="services_helpingicons"
-          image2Src="assets/svg/service2_homeicon.svg"
-          image2Alt="Visa Consultancy and Accommodation Icon"
-          heading="From Visa Consultancy"
-          subheading="to Accommodation"
-          whichService={<VisaServices />}
-        />
+        <ServicesDesignLeft key="services2" whichService={<VisaServices />} />
         <br />
         <ServicesDesignRight
           key="services3"

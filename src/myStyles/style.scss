@@ -350,3 +350,27 @@ $color-phone: #75eb6a;
     }
   }
 }
+
+/* About */
+.about_row {
+  margin-top: 14vh;
+}
+.about_atinc{
+  text-align: center;
+  color: $color-services_subhead;
+  font-size: 2.2rem;
+  // line-height: 2.5rem;
+  // font-stretch: expanded;
+}
+.about_atinc_strong {
+  transform: scale(.5, 2);
+
+}
+.about_atinc_desc{
+  text-align: center;
+  color: $color-services_subhead;
+  font-size: 1.5rem;
+}
+.about_svg{
+width: 40vw;
+}

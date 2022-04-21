@@ -1,29 +1,31 @@
 import React from "react";
-import { Row, Col, Image } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
+import Images from "../heads/Images";
+import ServiceHeadings from "../heads/ServiceHeadings";
 
 function ServicesDesignLeft(props) {
   return (
     <Row className="services_row ms-auto">
       <Col md={6} className="services_cols">
-        <Image
-          className={props.image2Class}
-          src={props.image2Src}
-          alt={props.image2Alt}
+        <Images
+          key="services2image2"
+          imageClass="services_helpingicons"
+          imageSrc="assets/svg/service2_homeicon.svg"
+          imageAlt="Visa Consultancy and Accommodation Icon"
         />
-        <p className="serices_p">
-          <span className="services_services_points">
-            <strong>{props.heading}</strong>
-          </span>
-          <br />
-          <span className="services_services_points">{props.subheading}</span>
-        </p>
+        <ServiceHeadings
+          key="services2headsubhead"
+          heading="From Visa Consultancy"
+          subheading="to Accommodation"
+        />
         {props.whichService}
       </Col>
       <Col md={6} className="services_cols">
-        <Image
-          className={props.image1Class}
-          src={props.image1Src}
-          alt={props.image1Alt}
+        <Images
+          key="services2image1"
+          imageClass="services_svg services_service2_svg"
+          imageSrc="assets/svg/service2.svg"
+          imageAlt="From Visa Consultancy to Accommodation"
         />
       </Col>{" "}
     </Row>
