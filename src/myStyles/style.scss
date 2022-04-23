@@ -359,17 +359,18 @@ $color-phone: #75eb6a;
   text-align: center;
   color: $color-services_subhead;
   font-size: 2.2rem;
-  // line-height: 2.5rem;
-  // font-stretch: expanded;
 }
 .about_atinc_strong {
   transform: scale(.5, 2);
-
+}
+.about_p{
+  width: 85%;
 }
 .about_atinc_desc{
   text-align: center;
   color: $color-services_subhead;
   font-size: 1.5rem;
+  // width: 90%;
 }
 .about_svg{
 width: 40vw;

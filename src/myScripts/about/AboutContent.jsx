@@ -7,14 +7,16 @@ function AboutContent() {
   const googleData = useContext(GoogleSheetDataContext);
   return (
     <>
-      <Col md={5} className="services_cols">
-        <p>
+      <Col md={6} className="services_cols">
+        <p className="about_p">
           <span className="about_atinc">
             <strong className="about_atinc_strong">At Incredibles,</strong>
           </span>
           <br />
           {googleData.map((data, i) => (
-            <span className="about_atinc_desc">{data.about_incredibles}</span>
+            <span key={i} className="about_atinc_desc">
+              {data.about_incredibles}
+            </span>
           ))}
         </p>
       </Col>

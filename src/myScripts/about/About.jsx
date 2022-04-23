@@ -1,7 +1,9 @@
-import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import React, { useEffect, useContext } from "react";
+import { Container } from "react-bootstrap";
 import Headings from "../heads/Headings";
 import AboutDesign from "./AboutDesign";
+import PersonCard from "../heads/PersonCard";
+import { GoogleSheetDataContext } from "../ExternalFrame";
 
 function About() {
   return (
@@ -13,6 +15,8 @@ function About() {
         />
         <br />
         <AboutDesign />
+        <br />
+        <PersonCard />
       </Container>
     </>
   );
