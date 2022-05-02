@@ -1,11 +1,25 @@
-import React, { useEffect, useContext } from "react";
-import { Container } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import Headings from "../heads/Headings";
 import AboutDesign from "./AboutDesign";
 import PersonCard from "../heads/PersonCard";
-import { GoogleSheetDataContext } from "../ExternalFrame";
 
 function About() {
+  const aboutDirectors = [
+    {
+      index: 0,
+      image: "assets/avatar.jpeg",
+      title: "Vikas Narang",
+      about: "about vik",
+    },
+    {
+      index: 1,
+      image: "assets/avatar.jpeg",
+      title: "Ritika Narang",
+      about: "About rik",
+    },
+  ];
+
   return (
     <>
       <Container style={{ marginTop: "14vh" }}>
@@ -16,7 +30,18 @@ function About() {
         <br />
         <AboutDesign />
         <br />
-        <PersonCard />
+        <Row md="auto" className="justify-content-evenly mt-5">
+          {aboutDirectors.map((data, i) => (
+            <Col>
+              <PersonCard
+                key={data.index}
+                title={data.title}
+                image={data.image}
+                about={data.about}
+              />
+            </Col>
+          ))}
+        </Row>
       </Container>
     </>
   );

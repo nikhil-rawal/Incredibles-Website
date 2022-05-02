@@ -375,3 +375,8 @@ $color-phone: #75eb6a;
 .about_svg{
 width: 40vw;
 }
+.dir_div {
+  display: grid;
+margin-top: 15vh;
+  grid-template-columns: 1fr 1fr;
+}

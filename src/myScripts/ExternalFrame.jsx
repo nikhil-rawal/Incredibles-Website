@@ -7,6 +7,7 @@ import Home from "./home/Home";
 import Services from "./services/Services";
 import About from "./about/About";
 import TorontoVideo from "./bgVideo/TorontoVideo";
+import Testimonial from "./testimonials/Testimonial";
 
 export const GoogleSheetDataContext = React.createContext();
 
@@ -48,6 +49,7 @@ function ExternalFrame() {
         <Home />
         <Services />
         <About />
+        <Testimonial />
       </BrowserRouter>
     </GoogleSheetDataContext.Provider>
   );
