@@ -25,7 +25,7 @@ $color-phone: #75eb6a;
   color: $color-subheading;
   font-size: $subheading_normalFont;
 }
-.home_torontovideo {
+/* .home_torontovideo {
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -38,15 +38,30 @@ $color-phone: #75eb6a;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+} */
+.home_bgToronto{
+  object-fit: cover;
+  position: absolute;
+  top: 2.5vh;
+  left: 25vh;
+  // height: 100vh;
+  width: 75%;
+  max-width: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  // opacity: 0.9;
 }
 
 /* Top Bar */
 .topbar_everything {
-  background-color: rgb(1, 1, 1); /* Fallback color */
-  background-color: rgba(1, 1, 1, 0.3); /* Black w/opacity/see-through */
-  backdrop-filter: blur(12px);
-  -moz-backdrop-filter: blur(12px);
-  font-weight: bold;
+  // background-color: rgb(1, 1, 1); /* Fallback color */
+  // background-color: rgba(1, 1, 1, 0.3); /* Black w/opacity/see-through */
+  // backdrop-filter: blur(12px);
+  // -moz-backdrop-filter: blur(12px);
+  // font-weight: bold;
   border: none;
   z-index: 2;
 }
@@ -55,61 +70,28 @@ $color-phone: #75eb6a;
   width: 13rem;
 }
 
-.topbar_links_container {
-  margin-top: none;
-}
-
-.topbar_links {
-  margin: 0 1vw 0 0;
-  font-size: $topBar_links_normalFont;
-  color: #ffffff;
-}
-.nav-links {
-  border-bottom: none;
-  text-decoration: none;
-  box-shadow: none;
-  position: relative;
-
-  &::before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  &:hover {
-    transform: translateY(-5px);
-    background-color: rgba(1, 1, 1, 0.1);
-
-    &::before {
-      background-color: rgba(1, 1, 1, 0.1);
-    }
-  }
-}
-
 /* Home */
 .home_data {
-  margin-top: 26vh;
+  margin-top: 6vh;
   text-align: center;
   overflow: hidden;
 }
 
 .home_heading {
   color: $color-heading1;
-  font-size: $heading_normalFont;
-  color: white;
+  font-size: 2.6rem;
+  color: #111111;
 }
 .home_heading_highword {
   background: linear-gradient(
     -45deg,
     $color-heading2,
-    #ffffff,
+    #353535,
     $color-heading2,
-    #ffffff
+    #353535
   );
   background-size: 300%;
-  font-size: 3vw;
+  font-size: 3.2rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   -webkit-background-clip: text;
@@ -130,13 +112,13 @@ $color-phone: #75eb6a;
 }
 .home_subheading {
   color: $color-subheading;
-  font-size: $subheading_normalFont;
-  color: #ffffff;
+  font-size: 2rem;
+  color: #111111;
 }
 .btn-homeApply {
   background: transparent;
   border-radius: 10px;
-  color: #ffffff;
+  color: #111111;
   width: 15rem;
   margin: 2rem 0 2rem 0.5rem;
   padding: 0.5rem;
@@ -149,13 +131,13 @@ $color-phone: #75eb6a;
 .homeApply_btn {
   transition: all 0.3s;
   position: relative;
-  color: #ffffff;
+  color: #111111;
   background-color: $color-heading2;
-  border: #ffffff;
-  outline: #ffffff;
+  border: #111111;
+  outline: #111111;
   border-radius: 0%;
   .homeApply_btn_span {
-    color: #ffffff;
+    color: #111111;
     z-index: 2;
     transition: all 0.3s;
   }
@@ -202,11 +184,15 @@ $color-phone: #75eb6a;
   color: #ffffff;
 }
 
+.social_icon_row{
+  padding-top: 18%;
+}
 .btn-homeSocial {
   font-size: 1.5rem;
 }
 .social_icon {
   transition: 0.2s linear;
+  font-size: 1.5rem;
 }
 .facebook_icon {
   color: $color-facebook;
@@ -235,7 +221,7 @@ $color-phone: #75eb6a;
   color: $color-phone;
 }
 .social_btn {
-  padding: 1.1rem;
+  padding: 1.5rem;
   display: inline-block;
   background: transparent;
   border-radius: 30%;
@@ -259,8 +245,8 @@ $color-phone: #75eb6a;
   &::before {
     content: "";
     position: absolute;
-    width: 120%;
-    height: 120%;
+    width: 150%;
+    height: 150%;
     transform: rotate(45deg);
     left: -110%;
     top: 90%;

@@ -32,9 +32,8 @@ function About() {
         <br />
         <Row md="auto" className="justify-content-evenly mt-5">
           {aboutDirectors.map((data, i) => (
-            <Col>
+            <Col key={data.index}>
               <PersonCard
-                key={data.index}
                 title={data.title}
                 image={data.image}
                 about={data.about}

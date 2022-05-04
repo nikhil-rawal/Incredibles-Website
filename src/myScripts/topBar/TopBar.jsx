@@ -1,24 +1,29 @@
 import React from "react";
-import { LinkContainer } from "react-router-bootstrap";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container } from "react-bootstrap";
 import Images from "../heads/Images";
 
 function TopBar() {
   return (
     <Navbar expand="lg" className="topbar_everything">
       <Container>
-        <LinkContainer to="/">
-          <Navbar.Brand>
-            <Images
-              key="brandlogo"
-              imageClass="topbar_incredibleslogo"
-              imageSrc="assets/svg/incredibles_logo.svg"
-              imageAlt="Incredibles Logo"
-            />
-          </Navbar.Brand>
-        </LinkContainer>
+        <Navbar.Brand>
+          <Images
+            key="brandlogo"
+            imageClass="topbar_incredibleslogo"
+            imageSrc="assets/svg/incredibles_logo.svg"
+            imageAlt="Incredibles Logo"
+          />
+        </Navbar.Brand>
+      </Container>
+    </Navbar>
+  );
+}
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+export default TopBar;
+
+/*
+
+<Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto topbar_links_container">
@@ -54,9 +59,5 @@ function TopBar() {
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
-}
 
-export default TopBar;
+        */

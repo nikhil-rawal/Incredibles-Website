@@ -11,7 +11,7 @@ import DepartureServices from "./DepartureServices";
 function Services() {
   return (
     <>
-      <Container className="services_container" style={{ marginTop: "30vh" }}>
+      <Container className="services_container" style={{ marginTop: "50vh" }}>
         <Headings
           heading="Explore Your Incredible Options"
           subheading="We can make your overseas education dream come true."

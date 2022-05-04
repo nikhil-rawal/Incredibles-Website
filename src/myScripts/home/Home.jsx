@@ -34,7 +34,7 @@ function Home() {
             <ArrowRight className="homeApply_btn_arrow" />
           </Button>{" "}
         </Row>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center social_icon_row">
           <Col md={1}>
             <Button
               variant="homeSocial"
@@ -112,30 +112,17 @@ function Home() {
             </Button>
           </Col>
         </Row>
-
-        {/* <Col md={6}>
-            <Image
-              className="home_studyabroad_map_logo"
-              src="assets/svg/study_abroad.svg"
-              alt="Study Abroad"
-            />
-          </Col> */}
       </Container>
     </>
   );
 }
 
 export default Home;
-{
-  /* ['1x1', '4x3', '16x9', '21x9'].map((ratio) => (
-  <Ratio aspectRatio={ratio}>
-    <div>{ratio}</div>
-  </Ratio>
-));
-
-        <div style={{ width: 660, height: 'auto' }}>
-  <Ratio aspectRatio="16x9">
-    <embed type="image/svg+xml" src="/TheresaKnott_castle.svg" />
-  </Ratio>
-</div> */
-}
+/* <Col md={6}>
+      <Image
+        className="home_studyabroad_map_logo"
+        src="assets/svg/study_abroad.svg"
+        alt="Study Abroad"
+      />
+    </Col>
+*/
