@@ -16,6 +16,11 @@ function ExternalFrame() {
   const apiSheet = process.env.REACT_APP_APISHEETKEY;
   // const apiSheet = `https://api.sheety.co/20ef431b3c9a6e816e15cb7cdb99c644/tryApiForIncredibes/sheet1`;
 
+  function logError(err) {
+    seterror([err.response]);
+    console.error("An Error has been occured", error);
+  }
+
   async function callGoogleSheet() {
     try {
       const reqAPISheetData = await Axios.get(apiSheet);
@@ -23,13 +28,13 @@ function ExternalFrame() {
     } catch (err) {
       if (err.response) {
         console.error(`Error occured. ${err.response}`);
-        seterror([err.response]);
+        logError(err);
       } else if (err.request) {
         console.error(`Error occured. ${err.request}`);
-        seterror([err.request]);
+        logError(err);
       } else {
         console.error(`Error occured. ${err}`);
-        seterror([err]);
+        logError(err);
       }
     }
   }
@@ -38,7 +43,7 @@ function ExternalFrame() {
 
   useEffect(() => {
     callGoogleSheet();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <GoogleSheetDataContext.Provider value={googleData}>
