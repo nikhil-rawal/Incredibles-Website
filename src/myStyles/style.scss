@@ -44,7 +44,6 @@ $color-phone: #75eb6a;
   position: absolute;
   top: 2.5vh;
   left: 25vh;
-  // height: 100vh;
   width: 75%;
   max-width: 100%;
   z-index: -1;
@@ -52,7 +51,6 @@ $color-phone: #75eb6a;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  // opacity: 0.9;
 }
 
 /* Top Bar */
@@ -221,7 +219,7 @@ $color-phone: #75eb6a;
   color: $color-phone;
 }
 .social_btn {
-  padding: 1.5rem;
+  padding: 1.3rem;
   display: inline-block;
   background: transparent;
   border-radius: 30%;
@@ -232,7 +230,7 @@ $color-phone: #75eb6a;
   &:hover {
     border: 0 5px 8px -5px #00000070;
     .social_icon {
-      transform: scale(1.3);
+      transform: scale(1.2);
       color: #ffffff;
     }
     &::before {
@@ -365,4 +363,38 @@ width: 40vw;
   display: grid;
 margin-top: 15vh;
   grid-template-columns: 1fr 1fr;
+}
+
+//Testimonial
+
+.testimonial_image{
+  filter: blur(2.5px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.6
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  outline: #000860;
+  background-size: 100%, 100%;
+  border: 1px solid transparent;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #000860;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #000860;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #000860 !important
 }

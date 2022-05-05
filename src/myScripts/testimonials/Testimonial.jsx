@@ -12,14 +12,22 @@ function Testimonial() {
         <Headings heading="Our Success Stories" />
         <br />
         <Container className="justify-content-center">
-          <Carousel style={{ margin: "auto", width: "50%" }}>
+          <Carousel style={{ margin: "auto" }}>
             {googleData.map((data, i) => (
               <Carousel.Item key={i}>
-                <Row></Row>
-                <Carousel.Caption>
-                  <h2>{data.testimonial_band}</h2>
-                  <p>{data.testimonial_content}</p>
-                  <h3>{data.testimonial_author}</h3>
+                <img
+                  className="testimonial_image"
+                  src="assets/testimonial.svg"
+                />
+                <Carousel.Caption
+                  style={{
+                    color: "#000860",
+                    verticalAlign: "center",
+                  }}
+                >
+                  <h2>Band Score: {data.testimonialBand}</h2>
+                  <p>{data.testimonialContent}</p>
+                  <h3>{data.testimonialAuthor}</h3>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}

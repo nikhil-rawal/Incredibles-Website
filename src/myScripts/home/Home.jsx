@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image, Button, Ratio } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import {
   Facebook,
   Instagram,

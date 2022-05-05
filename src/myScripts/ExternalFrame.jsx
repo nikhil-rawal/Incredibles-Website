@@ -13,8 +13,8 @@ export const GoogleSheetDataContext = React.createContext();
 function ExternalFrame() {
   const [data, setData] = useState([]);
   const [error, seterror] = useState(null);
-  const apiSheet = process.env.REACT_APP_APISHEETKEY;
-  // const apiSheet = `https://api.sheety.co/20ef431b3c9a6e816e15cb7cdb99c644/tryApiForIncredibes/sheet1`;
+  // const apiSheet = process.env.REACT_APP_APISHEETKEY;
+  const apiSheet = `https://api.sheety.co/20ef431b3c9a6e816e15cb7cdb99c644/tryApiForIncredibes/sheet1`;
 
   function logError(err) {
     seterror([err.response]);
