@@ -4,7 +4,6 @@ import {
   Facebook,
   Instagram,
   Youtube,
-  ArrowRight,
   Whatsapp,
   Envelope,
   Telephone,
