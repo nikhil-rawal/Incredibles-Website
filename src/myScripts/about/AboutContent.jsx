@@ -13,7 +13,7 @@ function AboutContent() {
         <br />
         {googleData.map((data, i) => (
           <span key={i} className="about_atinc_desc">
-            {data.aboutIncredibles}
+            {data.about_incredibles}
           </span>
         ))}
       </p>

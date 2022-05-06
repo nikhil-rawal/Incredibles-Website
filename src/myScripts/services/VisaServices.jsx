@@ -9,7 +9,7 @@ export default function VisaServices() {
     <>
       {googleData.map((data, i) => (
         <ListGroup key={i} variant="flush" className="services_listgroup2">
-          <ListGroup.Item>{data.visaconsultancyAccomodation}</ListGroup.Item>
+          <ListGroup.Item>{data.visaconsultancy_accomodation}</ListGroup.Item>
         </ListGroup>
       ))}
     </>

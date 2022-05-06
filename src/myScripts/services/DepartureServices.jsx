@@ -9,7 +9,7 @@ export default function DepartureServices() {
     <>
       {googleData.map((data, i) => (
         <ListGroup key={i} variant="flush" className="services_listgroup">
-          <ListGroup.Item>{data.departureOnsightsupport}</ListGroup.Item>
+          <ListGroup.Item>{data.departure_onsightsupport}</ListGroup.Item>
         </ListGroup>
       ))}
     </>

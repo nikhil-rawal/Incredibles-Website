@@ -26,9 +26,9 @@ function CarouselBg() {
                     verticalAlign: "center",
                   }}
                 >
-                  <h2>Band Score: {data.testimonialBand}</h2>
-                  <p>{data.testimonialContent}</p>
-                  <h3>{data.testimonialAuthor}</h3>
+                  <h2>Band Score: {data.testimonial_band}</h2>
+                  <p>{data.testimonial_content}</p>
+                  <h3>{data.testimonial_author}</h3>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
