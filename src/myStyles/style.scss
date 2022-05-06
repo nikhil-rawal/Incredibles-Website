@@ -19,11 +19,19 @@ $color-phone: #75eb6a;
   text-align: center;
   color: $color-heading1;
   font-size: $heading_normalFont;
+
+  @media (max-width: 700px) {
+    font-size: 2rem;
+  }
 }
 .section_subheading {
   text-align: center;
   color: $color-subheading;
   font-size: $subheading_normalFont;
+
+  @media (max-width: 700px) {
+    font-size: 1.5rem;
+  }
 }
 /* .home_torontovideo {
   object-fit: cover;
@@ -54,6 +62,16 @@ $color-phone: #75eb6a;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (max-width: 700px) {
+    width: 90%;
+  }
+  @media (max-width: 500px) {
+    top: 33vh;
+  }
+  @media (max-width: 400px) {
+    top: 30vh;
+  }
 }
 
 /* Top Bar */
@@ -64,6 +82,14 @@ $color-phone: #75eb6a;
 
 .topbar_incredibleslogo {
   width: 13rem;
+
+  @media (max-width: 700px) {
+    margin-left: -30px;
+  }
+  @media (max-width: 500px) {
+    margin-left: 0px;
+    width: 10rem;
+  }
 }
 
 /* Home */
@@ -76,6 +102,12 @@ $color-phone: #75eb6a;
   color: $color-heading1;
   font-size: 2.6rem;
   color: #000860;
+  @media (max-width: 500px) {
+    font-size: 2.2rem;
+  }
+  @media (max-width: 400px) {
+    font-size: 2rem;
+  }
 }
 .home_heading_highword {
 text-align: right;
@@ -94,6 +126,13 @@ text-align: right;
   -webkit-text-fill-color: transparent;
   animation: highword 5s ease-in-out infinite;
   -moz-animation: highword 5s ease-in-out infinite;
+
+  @media (max-width: 500px) {
+    font-size: 2.8rem;
+  }
+  @media (max-width: 400px) {
+    font-size: 2.2rem;
+  }
 }
 @keyframes highword {
   0% {
@@ -110,23 +149,24 @@ text-align: right;
   color: $color-subheading;
   font-size: 2rem;
   color: #000860;
-}
-.btn-homeApply {
-  background: transparent;
-  border-radius: 10px;
-  color: #111111;
-  width: 15rem;
-  margin: 2rem 0 2rem 0.5rem;
-  padding: 0.5rem;
-  font-size: 1.3rem;
-  align-content: center;
-  align-items: center;
-  text-align: center;
+  @media (max-width: 500px) {
+    font-size: 1.8rem;
+  }
+  @media (max-width: 400px) {
+    font-size: 1.6rem;
+  }
 }
 
 .social_icon_row{
   padding-top: 32%;
   -moz-padding-top: 34%;
+
+  @media (max-width: 750px) {
+    padding-top: 10%;
+  }
+  @media (max-width: 500px) {
+    padding-top: 55%;
+  }
 }
 .btn-homeSocial {
   font-size: 1.5rem;
@@ -240,6 +280,9 @@ text-align: right;
 
 /* Services */
 .services_container {
+  @media (max-width: 650px) {
+    margin-top: 8vh;
+  }
   .services_row {
     margin-top: 14vh;
   }
@@ -248,19 +291,37 @@ text-align: right;
   }
   .services_svg {
     width: 40vw;
+
+    @media (max-width: 700px) {
+      width: 70vw;
+    }
+    @media (max-width: 400px) {
+      width: 85vw;
+    }
+    
   }
   .services_helpingicons {
     width: 80px;
     margin-left: -75%;
+    @media (max-width: 400px) {
+      width: 60px;
+    }
   }
   .services_services_points {
     color: $color-services_subhead;
     font-size: $services_subheading-font;
     align-content: center;
+    @media (max-width: 400px) {
+      font-size: 1.5rem;
+    }
   }
   .services_listgroup > * {
     opacity: 0.8;
     cursor: pointer;
+
+    @media (max-width: 700px) {
+      font-size: 1.2rem;
+    }
 
     &:hover {
       opacity: 1;
@@ -270,15 +331,33 @@ text-align: right;
   .services_listgroup2 > * {
     opacity: 0.8;
     cursor: pointer;
-
+    @media (max-width: 700px) {
+      font-size: 1.2rem;
+    }
     &:hover {
       opacity: 1;
       transform: translateX(-2%) scale(1.1);
     }
   }
 }
+.services_row_rev{
+  @media (max-width: 750px) {
+    flex-flow: column-reverse;
+  }
+}
+.services_row_notrev{
+  @media (max-width: 400px) {
+    margin-top: 0;
+  }
+}
 
 /* About */
+.about_container{
+  margin-top: 6vh;
+  @media (max-width: 750px) {
+   text-align: center;
+  }
+}
 .about_row {
   margin-top: 14vh;
 }
@@ -301,6 +380,12 @@ text-align: right;
 }
 .about_svg{
 width: 40vw;
+@media (max-width: 700px) {
+  width: 70vw;
+}
+@media (max-width: 400px) {
+  width: 85vw;
+}
 }
 .dir_div {
   display: grid;
@@ -341,6 +426,12 @@ margin-top: 15vh;
 .carousel-indicators [data-bs-target] {
   background-color: #000860 !important
 }
+.abt_dir{
+  @media (max-width: 400px) {
+    margin: auto;
+    padding: auto;
+  }
+}
 .testimonial_results{
   object-fit: cover;
   position: absolute;
@@ -356,6 +447,9 @@ margin-top: 15vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  @media (max-width: 400px) {
+    height: 60%;
+  }
 }
 
 .test_res{
@@ -363,6 +457,25 @@ color: #000860;
 }
 .connect_us_svg{
   width: 40vw;
+  @media (max-width: 700px) {
+    width: 70vw;
+    text-align: center;
+  }
+  @media (max-width: 400px) {
+    width: 85vw;
+  }
+}
+.connect_reqChange{
+  @media (max-width: 700px) {
+    margin: auto;
+  }
+}
+.dad_connectus{
+  @media (max-width: 700px) {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 5vh;
+  }
 }
 
 /* Footer */

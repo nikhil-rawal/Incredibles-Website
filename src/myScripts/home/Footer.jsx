@@ -11,7 +11,7 @@ function Footer() {
       }}
     >
       <span className="footer_span">
-        &#169;2021, Incredibles, India, Inc. All rights reserved.
+        &#169;2022, Incredibles, India, Inc. All rights reserved.
       </span>
       <br />
       <span className="footer_span">

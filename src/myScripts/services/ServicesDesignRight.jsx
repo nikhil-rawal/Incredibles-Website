@@ -3,7 +3,7 @@ import { Row, Col, Image } from "react-bootstrap";
 
 function ServicesDesignRight(props) {
   return (
-    <Row className="services_row ms-auto">
+    <Row className="services_row ms-auto services_row_notrev">
       <Col md={6} className="services_cols">
         <Image
           className={props.image1Class}

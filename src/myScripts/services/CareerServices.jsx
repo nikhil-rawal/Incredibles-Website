@@ -8,7 +8,7 @@ export default function CareerServices() {
     <>
       {googleData.map((data, i) => (
         <ListGroup key={i} variant="flush" className="services_listgroup">
-          <ListGroup.Item>
+          <ListGroup.Item className="services_allpoints">
             {data.careercounsellingUniversityadmissions}
           </ListGroup.Item>
         </ListGroup>

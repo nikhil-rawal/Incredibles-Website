@@ -5,7 +5,7 @@ import ServiceHeadings from "../heads/ServiceHeadings";
 
 function ServicesDesignLeft(props) {
   return (
-    <Row className="services_row ms-auto">
+    <Row className="services_row ms-auto services_row_rev">
       <Col md={6} className="services_cols">
         <Images
           key="services2image2"

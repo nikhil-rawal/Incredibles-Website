@@ -52,8 +52,8 @@ function ConnectWithUs() {
           subheading="Send us your query and we will get back to you!"
         />
         <br />
-        <Row style={{ marginTop: "10vh" }}>
-          <Col md={6}>
+        <Row style={{ marginTop: "10vh" }} className="connect_reqChange">
+          <Col md={6} sm={12} className="dad_connectus">
             <Images
               key="Connect_"
               imageClass="connect_us_svg"
@@ -62,7 +62,7 @@ function ConnectWithUs() {
             />
           </Col>
 
-          <Col md={6}>
+          <Col md={6} sm={12}>
             <Form>
               <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridName">

@@ -27,15 +27,9 @@ function Home() {
         <Row>
           <h2 className="home_subheading">Be Incredible with Incredibles</h2>
         </Row>
-        <Row className="justify-content-center">
-          {/* <Button variant="homeApply" className="homeApply_btn" size="medium">
-            <span className="homeApply_btn_span">Apply Online</span>
-            &nbsp;&nbsp;
-            <ArrowRight className="homeApply_btn_arrow" />
-          </Button>{" "} */}
-        </Row>
+
         <Row className="justify-content-center social_icon_row">
-          <Col md={1}>
+          <Col md={1} sm={2} xs={2}>
             <Button
               variant="homeSocial"
               className="facebook_btn social_btn"
@@ -48,7 +42,7 @@ function Home() {
             </Button>
           </Col>
 
-          <Col md={1}>
+          <Col md={1} sm={2} xs={2}>
             <Button
               variant="homeSocial"
               className="instagram_btn social_btn"
@@ -60,7 +54,7 @@ function Home() {
               <Instagram className="instagram_icon social_icon" />
             </Button>
           </Col>
-          <Col md={1}>
+          <Col md={1} sm={2} xs={2}>
             <Button
               variant="homeSocial"
               className="youtube_btn social_btn"
@@ -73,7 +67,7 @@ function Home() {
             </Button>
           </Col>
 
-          <Col md={1}>
+          <Col md={1} sm={2} xs={2}>
             <Button
               variant="homeSocial"
               className="whatsapp_btn social_btn"
@@ -86,7 +80,7 @@ function Home() {
             </Button>
           </Col>
 
-          <Col md={1}>
+          <Col md={1} sm={2} xs={2}>
             <Button
               variant="homeSocial"
               className="mail_btn social_btn"
@@ -99,7 +93,7 @@ function Home() {
             </Button>
           </Col>
 
-          <Col md={1}>
+          <Col md={1} sm={2} xs={2}>
             <Button
               variant="homeSocial"
               className="phone_btn social_btn"

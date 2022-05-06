@@ -22,7 +22,7 @@ function About() {
 
   return (
     <>
-      <Container style={{ marginTop: "6vh" }}>
+      <Container className="about_container" style={{ marginTop: "6vh" }}>
         <Headings
           heading="Our Incredible Story"
           subheading="Anything About Incredibles"
@@ -30,7 +30,7 @@ function About() {
         <br />
         <AboutDesign />
         <br />
-        <Row md="auto" className="justify-content-evenly mt-5">
+        <Row md="auto" sm={12} className="justify-content-evenly mt-5 abt_dir">
           {aboutDirectors.map((data, i) => (
             <Col key={data.index}>
               <PersonCard
