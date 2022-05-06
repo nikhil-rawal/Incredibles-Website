@@ -28,11 +28,11 @@ function Home() {
           <h2 className="home_subheading">Be Incredible with Incredibles</h2>
         </Row>
         <Row className="justify-content-center">
-          <Button variant="homeApply" className="homeApply_btn" size="medium">
+          {/* <Button variant="homeApply" className="homeApply_btn" size="medium">
             <span className="homeApply_btn_span">Apply Online</span>
             &nbsp;&nbsp;
             <ArrowRight className="homeApply_btn_arrow" />
-          </Button>{" "}
+          </Button>{" "} */}
         </Row>
         <Row className="justify-content-center social_icon_row">
           <Col md={1}>

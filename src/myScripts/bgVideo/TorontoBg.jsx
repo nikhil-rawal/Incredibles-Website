@@ -1,14 +1,17 @@
 import React from "react";
 import Images from "../heads/Images";
+import { Container } from "react-bootstrap";
 
 function TorontoBg() {
   return (
-    <Images
-      key="bgToronto"
-      imageClass="home_bgToronto"
-      imageSrc="assets/svg/home_toronto.svg"
-      imageAlt="Toronto Background"
-    />
+    <div className="torontoBg_Div">
+      <Images
+        key="bgToronto"
+        imageClass="home_bgToronto"
+        imageSrc="assets/svg/home_toronto.svg"
+        imageAlt="Toronto Background"
+      />
+    </div>
   );
 }
 

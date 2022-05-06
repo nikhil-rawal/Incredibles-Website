@@ -22,7 +22,7 @@ function About() {
 
   return (
     <>
-      <Container style={{ marginTop: "14vh" }}>
+      <Container style={{ marginTop: "6vh" }}>
         <Headings
           heading="Our Incredible Story"
           subheading="Anything About Incredibles"
