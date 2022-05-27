@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Container, Carousel, Row } from "react-bootstrap";
 import Headings from "../heads/Headings";
 import { GoogleSheetDataContext } from "../ExternalFrame";
-import Images from "../heads/Images";
 function CarouselBg() {
   const googleData = useContext(GoogleSheetDataContext);
 

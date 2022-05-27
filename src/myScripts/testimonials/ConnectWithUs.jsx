@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
 import Headings from "../heads/Headings";
 import Images from "../heads/Images";
@@ -33,8 +33,8 @@ function ConnectWithUs() {
     alert(
       `Your query has been submitted. Our team will get back to you shortly.`
     );
-    const templateId = "template_jdzpk6s";
-    const serviceID = "service_0rccbeg";
+    const templateId = "template_7u2812h";
+    const serviceID = "service_5jvtan9";
     sendFeedback(serviceID, templateId, {
       from_name: formData.name,
       phone: formData.phone,
@@ -52,6 +52,7 @@ function ConnectWithUs() {
           subheading="Send us your query and we will get back to you!"
         />
         <br />
+
         <Row style={{ marginTop: "10vh" }} className="connect_reqChange">
           <Col md={6} sm={12} className="dad_connectus">
             <Images
@@ -63,7 +64,7 @@ function ConnectWithUs() {
           </Col>
 
           <Col md={6} sm={12}>
-            <Form>
+            <Form noValidate onSubmit={(e) => window.location.reload()}>
               <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridName">
                   <Form.Label>Name</Form.Label>
