@@ -25,7 +25,7 @@ function About() {
       <Container className="about_container" style={{ marginTop: "6vh" }}>
         <Headings
           heading="Our Incredible Story"
-          subheading="Anything About Incredibles"
+          subheading="This is what we tell"
         />
         <br />
         <AboutDesign />
@@ -35,7 +35,7 @@ function About() {
             <Col key={data.index}>
               <PersonCard
                 title={data.title}
-                image={data.image}
+                // image={data.image}
                 about={data.about}
               />
             </Col>
