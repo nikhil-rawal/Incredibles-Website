@@ -72,7 +72,7 @@ function Home() {
               className="whatsapp_btn social_btn"
               size="small"
               rel="noopener noreferrer"
-              href="https://wa.me/919996826166"
+              href="https://wa.me/918059520003"
               target="_blank"
             >
               <Whatsapp className="whatsapp_icon social_icon" />
