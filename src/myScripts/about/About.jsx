@@ -10,13 +10,13 @@ function About() {
       index: 0,
       image: "assets/avatar.jpeg",
       title: "Vikas Narang",
-      about: "about vik",
+      about: "4+ years of Industry Experience as an Immigration Consultant with over 200 happy customers around the world.",
     },
     {
       index: 1,
       image: "assets/avatar.jpeg",
       title: "Ritika Narang",
-      about: "About rik",
+      about: "IELTS/PTE, English Speaking and Personality Development Professor with proven and continuous results from the establishment of Incredibles.",
     },
   ];
 
